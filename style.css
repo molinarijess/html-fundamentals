@@ -1,5 +1,19 @@
+:root {
+  --title-color: #7f5283;
+  --text-color: #3d3c42;
+  --highlights: #a6d1e6;
+}
+
 body {
+  background-color: #fefbf6;
   font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--title-color);
 }
 
 h1 {
@@ -17,21 +31,35 @@ h3 {
 
 h4 {
   font-size: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 p {
   font-size: 22px;
   line-height: 1.5;
+  color: var(--text-color);
 }
 
 li {
   font-size: 20px;
 }
 
+a:link {
+  color: var(--highlights);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--highlights);
+}
+
 footer {
   font-size: 16px;
+}
+
+aside {
+  border-top: 5px solid var(--highlights);
+  border-bottom: 5px solid var(--highlights);
 }
 
 .related {
@@ -39,6 +67,8 @@ footer {
 }
 
 .related-author {
+  display: inline;
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
 }
