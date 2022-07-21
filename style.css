@@ -83,16 +83,23 @@ aside {
   border-top: 5px solid var(--highlights);
   border-bottom: 5px solid var(--highlights);
   padding: 40px 0;
+  width: 650px;
 }
 
 footer {
   font-size: 16px;
 }
 
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
 .main-header {
   background: #ffffff;
-  padding: 20px 0;
+  height: 80px;
   margin-bottom: 35px;
+  padding: 20px 0;
 }
 
 .post-header {
