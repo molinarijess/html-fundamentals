@@ -5,6 +5,7 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -45,6 +46,19 @@ h2 {
   margin-bottom: 30px;
 }
 
+h2::before {
+  background-color: #ffe70e;
+  color: #444;
+  content: "TOP";
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
+}
+
 h3 {
   font-size: 30px;
   margin-bottom: 10px;
@@ -54,6 +68,7 @@ h3 {
 h4 {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -93,10 +108,10 @@ article {
 }
 
 aside {
+  background-color: #fcf2e2;
   border-top: 5px solid var(--highlights);
   border-bottom: 5px solid var(--highlights);
-  padding: 40px 0;
-  width: 650px;
+  padding: 40px 30px;
 }
 
 footer {
@@ -105,11 +120,11 @@ footer {
 
 .container {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
 }
 
 .main-header {
-  background: #ffffff;
+  background: #fcf2e2;
   height: 80px;
   margin-bottom: 35px;
   padding: 20px 0;
@@ -117,10 +132,28 @@ footer {
 
 .post-header {
   margin-bottom: 25px;
+  position: relative;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  font-size: 18px;
+  margin: 10px 0 0 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 .related {
   list-style: none;
+  margin: 0;
 }
 
 .related-author {
