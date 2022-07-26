@@ -103,25 +103,31 @@ a:visited {
   color: var(--highlights);
 }
 
-article {
+/* article {
   flex: 1;
   margin-bottom: 0px;
-}
+} */
 
 aside {
   background-color: #fcf2e2;
   border-top: 5px solid var(--highlights);
   border-bottom: 5px solid var(--highlights);
-  flex: 0 0 300px;
+
   padding: 40px 30px;
 }
 
 footer {
   font-size: 16px;
+  grid-column: 1 / -1;
 }
 
 .container {
+  align-items: start;
+  column-gap: 75px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
   margin: 0 auto;
+  row-gap: 60px;
   width: 1200px;
 }
 
@@ -129,17 +135,10 @@ footer {
   align-items: center;
   background: #fcf2e2;
   display: flex;
+  grid-column: 1 / -1;
   height: 80px;
   justify-content: space-between;
-  margin-bottom: 35px;
   padding: 20px;
-}
-
-.row {
-  align-items: flex-start;
-  display: flex;
-  gap: 75px;
-  margin-bottom: 60px;
 }
 
 .post-header {
